@@ -1,0 +1,227 @@
+<html>
+
+<!--I COMMENTED OUT A LOT OF LITTLE DIV THINGS COS I WAS TRYING TO GET INPUT LOGIC/ERRORS TO WORK,
+LIKE 'NOT ENOUGH LETTERS IN PASSWORD' OR WHATEVER BUT IT DIDNT WORK SO I COMMENTED IT OUT SORRY MARKER-->
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="signupstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!--top bar-->
+    <div class="top-bar">
+        <a href="index.html" class="bar-item button">
+            <img src="/images/commbank-logo.jpg" alt="logo" id="comm-logo" width="50" height="50">
+        </a>
+
+        <!--right side buttons-->
+        <div class="right-bar">
+            <a href="#contacts" class="bar-item button">Contact</a>
+        </div>
+    </div>
+
+
+
+
+    <!--Progress bar-->
+
+
+
+    <progress max="100" value="0"></progress>
+
+
+
+
+    <!--steps bar-->
+    <div class="steps-bar">
+        <div class="steps-inner">
+            <div class="steps">
+                <p id="your-details">Your Details</p>
+                <div class="vlOne"></div>
+                <p id="verif">Verification</p>
+                <div class="vlTwo"></div>
+                <p id="summary">Summary</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--main onboarding-->
+
+
+    <div class="user-details">
+        <form id="main" class="form-horizontal" method="POST" action="error.js" name="vform">
+
+            <!--about you-->
+            <div class="about-you">
+
+                <h2 id="about-you-head">About You</h2>
+                <div class="first-name form-group" id="username">
+                    <div class="form">
+                        <input type="text" name="username" autocomplete="off" required />
+                        <label for="username" class="label-name">
+                            <span class="content-name">First Name</span>
+                        </label>
+                    </div>
+                    <div id="messages" class="val_error"></div>
+                </div>
+
+                <div class="last-name form-group">
+                    <div class="form">
+                        <input type="text" name="lastname" autocomplete="off" required />
+                        <label for="lastname" class="label-name">
+                            <span class="content-name">Last Name</span>
+                        </label>
+                    </div>
+                    <div id="messages" class="val_error"></div>
+                </div>
+
+                <img src="images/standing-19.png" alt="dude with beard" id="dudeWithBeard">
+                <img src="images/Plants.svg" alt="plants" id="plants">
+                <img src="images/standing-8.svg" alt="girlBlue" id="girlBlue">
+
+                <div class="inputDetails form-group">
+
+                    <form id="dropdown1">
+                        <input required type="date" id="DOB">
+                    </form>
+
+                </div>
+
+            </div>
+
+            <!--location-->
+
+            <div class="location">
+
+                <h2 id="location-head">Where Are You Located</h2>
+                <div class="addressOne form-group">
+                    <div class="form">
+                        <input type="text" name="address" autocomplete="off" required />
+                        <label for="address" class="label-name">
+                            <span class="content-name">Address Line 1</span>
+                        </label>
+                    </div>
+                    <div id="messages" class="val_error"></div>
+                </div>
+
+                <div class="addressTwo form-group">
+                    <div class="form">
+                        <input type="text" name="addresstwo" autocomplete="off" required />
+                        <label for="addresstwo" class="label-name">
+                            <span class="content-name">Address Line 2</span>
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="suburb form-group">
+                    <div class="form">
+                        <input type="text" name="surburb" autocomplete="off" required />
+                        <label for="suburb" class="label-name">
+                            <span class="content-name">Suburb</span>
+                        </label>
+                    </div>
+                    <div id="messages" class="suburb_error"></div>
+                </div>
+
+                <div class="postCode form-group">
+                    <div class="form">
+                        <input type="number" name="post" autocomplete="off" required />
+                        <label for="post" class="label-name">
+                            <span class="content-name">Post Code</span>
+                        </label>
+                    </div>
+                </div>
+                <div id="messages" class="val_error"></div>
+
+
+                <img src="/images/uni students.png" alt="uni-students" id="uni-students">
+
+
+            </div>
+
+
+            <!--communication-->
+            <div class="communication">
+                <h2 id="communication-head">How Should We Communicate</h2>
+
+                <div class="email form-group">
+                    <div class="form">
+                        <input type="email" name="email" autocomplete="off" required />
+                        <label for="email" class="label-name">
+                            <span class="content-name">Email</span>
+                        </label>
+                    </div>
+                    <div id="messages" class="val_error"></div>
+                </div>
+
+                <div class="mobile form-group">
+                    <div class="form">
+                        <input type="number" name="mobile" autocomplete="off" required />
+                        <label for="mobile" class="label-name">
+                            <span class="content-name">Mobile Number</span>
+                        </label>
+                    </div>
+                    <div id="messages" class="val_error"></div>
+                </div>
+
+                <div class="guardians-number form-group">
+                    <div class="form">
+                        <input type="number" name="guardian" autocomplete="off" required />
+                        <label for="guardian" class="label-name">
+                            <span class="content-name">Guardian's Number (optional)</span>
+                        </label>
+                    </div>
+
+                </div>
+
+
+                <img src="/images/guy with phone.png" alt="guy-with-phone" id="guy-with-phone">
+                <img src="/images/wireframe.svg" alt="emails" id="emails">
+
+                <!--
+                <div class="test">
+                    <input type="text" name="name" class="textInput" placeholder="name">
+                    <div id="name-error" class="val_error"></div>
+                </div>
+            -->
+            </div>
+
+
+
+            <div class="verification-link">
+                <a href="verify.html" id="verify-button">Go to Verify</a>
+                <!--FOR ERROR MESSAGE SUBMIT BUTTON
+                <button onclick="location.href='verify.html'" type="submit" id="button">
+                    yeet</button>
+                -->
+            </div>
+
+
+
+
+        </form>
+
+    </div>
+
+
+
+
+
+</body>
+<script type="text/javascript" src="js-onboard.js"></script>
+
+<!--THIS WAS ME TRYING TO GET THE ERROR MESSAGES TO WORK WHEN INPUT VALUES ARENT IN
+CERTIAN PARAMETERS. I'VE LEGIT TRIED SO MANY THINGS BUT THEY DONT WORK, I THINK IT'S
+BECAUSE I HAVE LITTLE INPUT ANIMATIONS OVER THE INPUT AND LABEL TAGS. ALSO, IT'S A 
+BIT OF A MESS BECAUSE I WAS TESTING OUT LIKE 5 DIFFERENT VERSIONS OF HOW TO INPUT AN
+ERROR MESSAGE.-->
+<script type="text/javascript" src="error.js"></script>
+<script type="text/javascript" src="errortest.js"></script>
+
+</html>

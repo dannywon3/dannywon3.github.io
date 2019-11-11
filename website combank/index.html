@@ -1,0 +1,353 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+</head>
+
+<body>
+
+    <!--top bar-->
+    <div class="top-bar">
+
+
+        <img src="/images/commbank-logo.jpg" alt="logo" width="50" height="50">
+        <a href="index.html" class="bar-item button">CommUni</a>
+
+        <!--right side buttons-->
+        <div class="right-bar">
+            <a href="#Log-in" class="bar-item button">Log In</a>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--side bar/more info-->
+
+    <div id="side-nav-box">
+        <span onclick="openNav()" id="explore-products">Explore Products</span>
+        <span onclick="openNavSmall()" id="explore-products-small">Explore Products</span>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <nav>
+            <div class="nav-container">
+
+                <ul id="side-list">
+                    <li>
+                        <a href="#bank-account">
+                            <div class="side-bar">
+                                <img src="/images/bank acc.png" alt="bank-acc" width="80" height="80">
+                                <p class="side-buttons">Bank Account</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#credit-cards">
+                            <div class="side-bar">
+                                <img src="/images/credit cards.png" alt="bank-acc" width="80" height="80">
+                                <p class="side-buttons">Credit Cards</p>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#financial-planning">
+                            <div class="side-bar">
+                                <img src="/images/financial plan.png" alt="bank-acc" width="80" height="80">
+                                <p class="side-buttons">Financial Planning</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#travel-products">
+                            <div class="side-bar">
+                                <img src="/images/travel.png" alt="bank-acc" width="80" height="80">
+                                <p class="side-buttons">Travel Products</p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+    </div>
+
+
+
+
+
+    <!--sign up-->
+
+    <div class="signUp">
+
+
+        <div class="signUpBox">
+            <h2 class="signup-head">CommUni</h2>
+            <form id="dropdown">
+                <select onchange="changeInput" class="bank-type-two">
+                    <option value="everydayAcc">Everyday Account</option>
+                    <option value="savingsAcc">Savings Account</option>
+                    <option value="lowRate">Low Rate Card</option>
+                    <option value="essentialsCard">Essentials Card</option>
+                    <option value="financialPlaner">Financial Planner</option>
+                    <option value="travelMoney">Travel Money Card</option>
+                </select>
+            </form>
+            <div class="signUpButton">
+                <a href="signuppage.html" class="signUpLink">Sign Up</a>
+
+            </div>
+
+            <img src="/images/girl with phone.png" alt="girl-with-phone" id="girl-with-phone">
+
+            <div class="signupIntro">
+                <h2 id="signupIntro-head">Join Australia's largest growing banking app for University students and young
+                    adults</h2>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!--bottom detail area-->
+
+    <div id="bank-account">
+
+        <!--wishy washy background thing-->
+        <div id="water">
+            <div class="background">
+                <div class="water"></div>
+            </div>
+            <svg>
+                <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+                    <feTurbulence id="sea-filter-one" numOctaves="3" seed="2" baseFrequency="0.05 0.1"></feTurbulence>
+                    <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+                    <animate xlink:href="#sea-filter-one" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1"
+                        values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite" />
+                </filter>
+            </svg>
+        </div>
+
+
+
+        <div id="bank-account-inner">
+            &nbsp;
+            <h2 class="bank-details-head">Bank Account</h2>
+
+            <div class="bank-details">
+                <div id="everyday-details">
+                    <h2 id="everyday-head">Everyday Accounts</h2>
+                    <p>Transaction accounts for day-to-day living to use for shopping, paying bills,
+                        withdrawing cash and more.</p>
+                    <ul>
+                        <li>Debit Mastercard included</li>
+                        <li>No ATM withdrawal fees with the largest branch and ATM network in Australia</li>
+                        <li>Low account fee which we can waive</li>
+                        <li>Great features included like Cardless Cash</li>
+                    </ul>
+
+                </div>
+
+                <div id="savings-details">
+                    <h2>Savings Account & Term Deposits</h2>
+                    <p>Savings accounts to help you reach your goals and have money set aside for the unexpected.</p>
+                    <ul>
+                        <li>Exclusive rates for University students and young adults</li>
+                        <li>Easy access to your savings 24/7</li>
+                        <li>Set savings goals in the CommBank app with Goal Tracker and make regular, automated
+                            transfers from your everyday account</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="credit-cards">
+
+        <!--wishy washy background thing-->
+        <div id="waterTwo">
+            <div class="backgroundTwo">
+                <div class="waterTwo"></div>
+            </div>
+            <svg>
+                <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+                    <feTurbulence id="sea-filter-two" numOctaves="3" seed="200" baseFrequency="0.5 1"></feTurbulence>
+                    <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+                    <animate xlink:href="#sea-filter-two" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1"
+                        values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite" />
+                </filter>
+            </svg>
+        </div>
+        &nbsp;
+        <div id="credit-cards-inner">
+            &nbsp;
+            <div class="credit-details">
+                <h2 class="credit-details-head">Credit Cards</h2>
+                <div id="lowRate-details">
+                    <h2 id="lowRate-head">Low Rate Credit Card</h2>
+                    <p>A credit card with a lower rate and lower minimum, but with less rewards</p>
+                    <ul>
+                        <li>9.90% p.a. purchase interest rate</li>
+                        <li>$2 monthly fee when you choose online statements and set up automatic repayments from a
+                            CommBank transaction account using AutoPay. Otherwise monthly fee is $5</li>
+                        <li>Credit limit from $400 to a maximum of $3000 </li>
+                    </ul>
+
+                </div>
+
+                <div id="essentials-details">
+                    <h2>Essentials Credit Card</h2>
+                    <p>Slightly higher rates and minimum credit, but no maximum limit and better rewards.</p>
+                    <ul>
+                        <li>13.24% p.a purchase interest rate</li>
+                        <li>$59 annual fee</li>
+                        <li>Minimum credit limit of $500</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="financial-planning">
+
+        <!--wishy washy background thing-->
+        <div id="waterThree">
+            <div class="backgroundThree">
+                <div class="waterThree"></div>
+            </div>
+            <svg>
+                <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+                    <feTurbulence id="sea-filter-three" numOctaves="3" seed="200" baseFrequency="0.5 0.1">
+                    </feTurbulence>
+                    <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+                    <animate xlink:href="#sea-filter-three" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1"
+                        values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite" />
+                </filter>
+            </svg>
+        </div>
+
+
+        &nbsp;
+        <div id="finance-inner">
+            &nbsp;
+            <div class="finance-details">
+                <h2 class="finance-details-head">Financial Planning</h2>
+                <div id="what-finance-details">
+                    <h2 id="what-finance-head">What does a financial planner do?</h2>
+                    <p>A financial planner can complete a comprehensive review of your financial situation and provide
+                        you with a plan to help you achieve your short, medium and long term goals. Your plan can
+                        include new opportunities and provide you with strategies to improve, grow and protect your
+                        wealth.</p>
+
+                </div>
+
+                <div id="how-finance-details">
+                    <h2>How will it help me?</h2>
+                    <p>Your financial planner can help you do what's most important to you.
+                        This could include, but isn't limited to:</p>
+                    <ul>
+                        <li>Set financial goals that balance your needs for today and tomorrow</li>
+                        <li>Start investing or optimise your existing portfolio</li>
+                        <li>Create a plan to pay off HECS debt</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="travel-products">
+
+        <!--wishy washy background thing-->
+        <div id="waterFour">
+            <div class="backgroundFour">
+                <div class="waterFour"></div>
+            </div>
+            <svg>
+                <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+                    <feTurbulence id="sea-filter-four" numOctaves="3" seed="200" baseFrequency="0.5 1"></feTurbulence>
+                    <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+                    <animate xlink:href="#sea-filter-four" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1"
+                        values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite" />
+                </filter>
+            </svg>
+        </div>
+
+
+        &nbsp;
+        <div id="travel-inner">
+            &nbsp;
+            <div class="travel-details">
+                <h2 class="travel-details-head">Travel Products</h2>
+                <div id="before-travel-details">
+                    <h2 id="before-travel-head">Before you go</h2>
+                    <p>We understand many Uni students and young adults love to travel and go on exchange, so before you
+                        go, we can help you prepare.</p>
+                    <ul>
+                        <li>Create a Travel Money Card</li>
+                        <li>Exchange currency at the best rates</li>
+                        <li>Receive the cheapest and most reliable travel insurance</li>
+                    </ul>
+
+                </div>
+
+                <div id="during-travel-details">
+                    <h2>While you're travelling</h2>
+                    <p>Travelling can be stressful and expensive, so we help you keep down those costs in the easiest
+                        way possible</p>
+                    <ul>
+                        <li>$0 reload fees when you reload your Travel Money Card</li>
+                        <li>Create daily transaction and credit card limits</li>
+                        <li>Pay bills and keep track of expenditures on the CommUni app</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="end-bit">
+        <div class="end-bit-inner">
+            <h2 id="end-head">Join CommUni and start saving money now.</h2>
+            <p id="end-detail">The earlier you save, the more money you make.</p>
+            <div class="signUpButtonTwo">
+                <a href="signuppage.html" class="signUpLinkTwo">Sign Up</a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<script src="side-nav.js"></script>
+
+</html>

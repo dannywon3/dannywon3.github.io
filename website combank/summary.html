@@ -1,0 +1,175 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="summary.css">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!--top bar-->
+    <div class="top-bar">
+        <a href="index.html" class="bar-item button">
+            <img src="/images/commbank-logo.jpg" alt="logo" id="comm-logo" width="50" height="50">
+        </a>
+
+        <!--right side buttons-->
+        <div class="right-bar">
+            <a href="#contacts" class="bar-item button">Contact</a>
+        </div>
+    </div>
+
+
+
+    <!--steps bar-->
+    <div class="steps-bar">
+        <div class="steps-inner">
+            <div class="steps">
+                <p id="your-details">Your Details</p>
+                <div class="vlOne"></div>
+                <p id="verif">Verification</p>
+                <div class="vlTwo"></div>
+                <p id="summary">Summary</p>
+            </div>
+        </div>
+
+        <!--back button-->
+        <div class="back-box">
+            <a href="verify.html" class="back-button">Back</a>
+        </div>
+    </div>
+
+
+    <!--summary-->
+
+    <div class="summary">
+        <div class="summary-inner">
+            <h2 id="sum-head">Hi &lt;first name&gt;</h2>
+            <p id="sum-detail">You've chosen to create a(n) &lt;account type&gt; account</p>
+            <p id="sum-detail-two">Please confirm that the details you've provided are correct.</p>
+
+            <div id="sum-box">
+                <p id="change-details">Change any incorrect details before submitting here.</p>
+
+                <div class="first-name">
+                    <div class="form">
+                        <input type="text" name="name" autocomplete="off" required value="&lt;first name&gt;" />
+                        <label for="name" class="label-name">
+                            <span class="content-name">First Name</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="last-name">
+                    <div class="form">
+                        <input type="text" name="name" autocomplete="off" required value="&lt;last name&gt;" />
+                        <label for="name" class="label-name">
+                            <span class="content-name">Last Name</span>
+                        </label>
+                    </div>
+                </div>
+
+                <form id="dropdown1">
+                    <input required type="date" id="DOB">
+                </form>
+
+                <div class="email">
+                    <div class="form">
+                        <input type="text" name="name" autocomplete="off" required value="&lt;email&gt;" />
+                        <label for="name" class="label-name">
+                            <span class="content-name">Email</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="addressOne">
+                    <div class="form">
+                        <input type="text" name="name" autocomplete="off" required value="&lt;address&gt;" />
+                        <label for="name" class="label-name">
+                            <span class="content-name">Address Line 1</span>
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="addressTwo">
+                    <div class="form">
+                        <input type="text" name="name" autocomplete="off" required value="&lt;address (optional)&gt;" />
+                        <label for="name" class="label-name">
+                            <span class="content-name">Address Line 2</span>
+                        </label>
+                    </div>
+                </div>
+
+
+
+                <div class="mobile">
+                    <div class="form">
+                        <input type="text" name="name" autocomplete="off" required value="&lt;mobile number&gt;" />
+                        <label for="name" class="label-name">
+                            <span class="content-name">Mobile Number</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="guardian">
+                    <div class="form">
+                        <input type="text" name="name" autocomplete="off" required
+                            value="&lt;guardian number (optional)&gt;" />
+                        <label for="name" class="label-name">
+                            <span class="content-name">Guardian's Number</span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="password">
+            <div class="password-inner">
+
+                <h2 id="password-head">Create your password</h2>
+                <div class="password-input">
+                    <div class="form">
+                        <input type="password" name="name" autocomplete="off" required />
+                        <label for="name" class="label-name">
+                            <span class="content-name">Password</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="password-input-two">
+                    <div class="form">
+                        <input type="password" name="name" autocomplete="off" required />
+                        <label for="name" class="label-name">
+                            <span class="content-name">Repeat Password</span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!--next page button-->
+        <div class="next-page">
+            <a href="endpoint.html" class="endpoint">Create Account</a>
+
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+<!--localstorage test-->
+<script type="text/javascript" src="localstoragetest.js"></script>
+
+</html>
